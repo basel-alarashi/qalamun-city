@@ -1,0 +1,285 @@
+.App {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1336px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* NAVBAR STYLE  */
+.navbar{
+  width: 100%;
+  height: 100px;
+  background-color: #1976d2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.logo-img{
+  height: 100%;
+  width: 100px;
+  object-fit: cover;
+}
+
+.logo-text{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-right: 10px;
+}
+
+.logout-btn{
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #2434ff;
+  background-color: transparent;
+  color: #2434ff;
+  transition: 0.5s all ease;
+}
+
+.logout-btn:hover{
+  cursor: pointer;
+  background-color: #2434ff;
+  color: white;
+}
+
+/* FOOTER STYLE */
+.footer{
+  width: 100%;
+  font-size: 20px;
+  font-style: italic;
+  border-top: 2px solid #333;
+}
+
+/* REGISTER STYLE */
+.reg-main{
+  width: 100%;
+  margin: 2% auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.reg-img{
+  flex: 1;
+  object-fit: cover;
+  width: 50%;
+  height: 25%;
+}
+
+.form-container{
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border: 1px solid #999;
+  border-radius: 40% / 10%;
+  padding-bottom: 20px;
+  box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.form-container h1{
+  font-size: 48px;
+  text-transform: capitalize;
+}
+
+.reg-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reg-link{
+  color: #2434ff;
+  font-weight: bold;
+}
+
+.reg-link:hover{
+  color: #1323bb;
+  border: none;
+}
+
+.reg-input{
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-size: 20px;
+}
+
+.reg-input:focus{
+  border-bottom: 1px solid #000;
+}
+
+.reg-btn{
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2434ff;
+  color: white;
+  font-weight: bold;
+}
+
+.reg-btn:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* HOME STYLE */
+.home-main{
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.home-content{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999;
+  border-radius: 10px;
+  background-color: #eff;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.home-content:hover{
+  transform: scale(0.98);
+}
+
+.home-name{
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.home-img{
+  object-fit: cover;
+  width: 300px;
+  height: 200px;
+}
+
+/* SPORT STYLE */
+.sport-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sport-main h1{
+  text-transform: capitalize;
+  font-size: 48px;
+}
+
+.sport-content{
+  width: 50%;
+  font-family: verdana;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* PARTICIPANT STYLE */
+.author{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* DIET STYLE */
+.diet-main{
+  margin: 2% auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.diet-header h1{
+  text-transform: capitalize;
+  font-size: 48px;
+}
+
+.diet-header h5{
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+.diet-header p{
+  font-family: verdana;
+  font-size: 18px;
+  text-align: left;
+}
+
+.diet-decided{
+  text-align: left;
+  font-size: 20px;
+}
+
+.check-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.rotate-spinner{
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 1rem solid #1976d2;
+  border-right: 1rem solid #3b98f4;
+  border-radius: 50%;
+  animation: r-spin 2s ease infinite;
+}
+
+@keyframes r-spin {
+  0%{
+    transform: rotate(0);
+  }
+  25%, 50%{
+    transform: rotate(180deg);
+  }
+  75%, 100%{
+    transform: rotate(360deg);
+  }
+}
